@@ -46,22 +46,14 @@
 			<?php }?>
 		</div>
 				<ul>
-			<?php foreach ( $nav as $i ) { ?>
-				<?php if($i->libelle_nav == 'Chat'){ ?>
-					<?php if($connexion){?><li class="<?php echo $i->libelle_nav; ?>"><?php echo $i->libelle_nav; ?></li><?php } ?>
-				<?php } else { ?>
-					<li><a href="<?php echo site_url().$i->link_nav; ?>"><?php echo $i->libelle_nav; ?></a>
-					</li>
-				<?php } ?>
 
-			<?php }; ?>
-			</ul>
+				</ul>
 			</div>
 			<div class="cleaner"></div>
 		</div>
 		<div class="tchatContainer">
-			<form id="input" style="display:none">
-				<input/>
+			<form id="input" style="display: none">
+				<input />
 			</form>
 			<div id="content"></div>
 		</div>
