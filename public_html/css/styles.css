@@ -1,39 +1,85 @@
+/************** GENERAL **************/
+input[type="text"] {
+	padding: 5px;
+	border-radius: 5px;
+}
+
 /************** NAVIGATION ***********/
 body {
-	background-color: #000;
-	background-image:url('/public_html/images/background/background.jpg');
-	background-attachment:fixed;
+	font-family: Arial;
+	background-color: #1d1d1b;
+	background-image: url('/public_html/images/background/background.jpg');
+	background-attachment: fixed;
 }
 
 .container {
-	margin-top:160px;
+	border-radius: 5px;
+	margin-top: 160px;
 	background-color: #eee;
 	padding: 5px;
+	margin-top: 160px;
 }
 
-#navigation{
-	height:50px;
-	line-height:50px;
-	width:100%;
+.logo {
+	width: 150px;
+	float: left;
+	margin-bottom:5px;
+}
+
+.login {
+	margin-top: 16px;
+	float: right;
+}
+
+.login ul li {
+	list-style-type: none;
+}
+
+#navigation {
+	border-radius:5px;
 	background-color:#000;
-	color:#FFF;
-	font-size:18px;
-	font-weight:bold;
+	margin-top:20px;
+	clear: both;
+	height: 38px;
+	line-height: 38px;
+	width: 100%;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
 }
 
-#navigation ul{
-	margin:0;
-	padding:0;
+#navigation ul {
+	margin: 0;
+	padding: 0;
 }
 
 #navigation ul li {
+	cursor: pointer;
+	background-color: #1d1d1b;
 	float: left;
 	list-style-type: none;
-	padding:0 10px;
-	border-left:1px solid #FFF;
-	border-right:1px solid #FFF;
+	padding: 0 10px;
+	margin: 0 5px;
+}
+
+#navigation ul li.first {
+	margin-left: 254px;
+}
+
+#navigation ul li.active {
+	background-color:#eee;
+	color:#000;
+}
+
+#navigation ul li:hover {
+	background-color: #eee;
+	color: #000;
 }
 
 .content {
-	clear: both
+	border-radius:5px;
+	margin-top:5px;
+	padding:5px;
+	background-color:#FFF;
+	clear: both;
 }
