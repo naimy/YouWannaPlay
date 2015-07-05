@@ -4,7 +4,7 @@
 	</div>
 	<div class="twitch">
 		<div class="lecteur">
-			<iframe src="http://www.twitch.tv/youwannaplay/embed" frameborder="0" scrolling="no" height="146" width="263"></iframe>
+			<iframe src="http://www.twitch.tv/youwannaplay/embed" frameborder="0" scrolling="no" height="147" width="263"></iframe>
 		</div>
 	</div>
 	<div class="login">

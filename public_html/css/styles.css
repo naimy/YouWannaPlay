@@ -24,10 +24,17 @@ body {
 	width: 150px;
 	float: left;
 	margin-bottom: 5px;
+	margin-top: 24px;
+	margin-left: 64px;
+	-moz-box-shadow: 0px 0px 10px 0px #000;
+	-webkit-box-shadow: 0px 0px 10px 0px #000;
+	-o-box-shadow: 0px 0px 10px 0px #000;
+	box-shadow: 0px 0px 10px 0px #000;
 }
 
 .login {
-	margin-top: 16px;
+	margin-top: 37px;
+	margin-right: 43px;
 	float: right;
 }
 
@@ -35,18 +42,18 @@ body {
 	list-style-type: none;
 }
 
-.twitch{
-	width:355px;
-	height:200px;
+.twitch {
+	width: 355px;
+	height: 200px;
 	background-image: url('/public_html/images/logo/iphone.png');
-	background-size:366px;
-	margin-left: 143px;
-  	float: left;
+	background-size: 366px;
+	margin-left: 69px;
+	float: left;
 }
 
-.twitch .lecteur{
-	margin-left:51px;
-	margin-top:26px;
+.twitch .lecteur {
+	margin-left: 51px;
+	margin-top: 25px;
 }
 
 #navigation {
@@ -89,9 +96,10 @@ body {
 }
 
 #navigation ul li a {
-	display:block;
+	display: block;
 	color: #FFF;
-	text-decoration:none;
+	text-decoration: none;
+	color: #FFF;
 }
 
 #navigation ul li:hover a {
