@@ -3,7 +3,9 @@
 		<img src="/public_html/images/logo/youwannaplay.png" width="150"/>
 	</div>
 	<div class="twitch">
-		<iframe src="http://www.twitch.tv/youwannaplay/embed" frameborder="0" scrolling="no" height="200" width="320"></iframe>
+		<div class="lecteur">
+			<iframe src="http://www.twitch.tv/youwannaplay/embed" frameborder="0" scrolling="no" height="146" width="263"></iframe>
+		</div>
 	</div>
 	<div class="login">
 	<ul>

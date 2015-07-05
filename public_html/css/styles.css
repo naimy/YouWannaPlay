@@ -36,8 +36,17 @@ body {
 }
 
 .twitch{
-	margin-left: 157px;
+	width:355px;
+	height:200px;
+	background-image: url('/public_html/images/logo/iphone.png');
+	background-size:366px;
+	margin-left: 143px;
   	float: left;
+}
+
+.twitch .lecteur{
+	margin-left:51px;
+	margin-top:26px;
 }
 
 #navigation {
