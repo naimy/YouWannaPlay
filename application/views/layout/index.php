@@ -14,6 +14,7 @@
 		</div>
 		
 		<div class="content">
+			<h2><?php echo $this->data['title']; ?></h2>
 			<?php if($content) echo $content ;?>
 		</div>
 		

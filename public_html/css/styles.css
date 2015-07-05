@@ -23,7 +23,7 @@ body {
 .logo {
 	width: 150px;
 	float: left;
-	margin-bottom:5px;
+	margin-bottom: 5px;
 }
 
 .login {
@@ -36,14 +36,13 @@ body {
 }
 
 #navigation {
-	border-radius:5px;
-	background-color:#000;
-	margin-top:20px;
+	border-radius: 5px;
+	background-color: #000;
+	margin-top: 20px;
 	clear: both;
 	height: 38px;
 	line-height: 38px;
 	width: 100%;
-	color: #FFF;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -63,12 +62,11 @@ body {
 }
 
 #navigation ul li.first {
-	margin-left: 254px;
+	margin-left: 190px;
 }
 
 #navigation ul li.active {
-	background-color:#eee;
-	color:#000;
+	background-color: #eee;
 }
 
 #navigation ul li:hover {
@@ -76,10 +74,24 @@ body {
 	color: #000;
 }
 
+#navigation ul li a {
+	color: #FFF;
+	text-decoration:none;
+}
+
+#navigation ul li:hover a {
+	background-color: #eee;
+	color: #000;
+}
+
+#navigation ul li.active a {
+	color: #000;
+}
+
 .content {
-	border-radius:5px;
-	margin-top:5px;
-	padding:5px;
-	background-color:#FFF;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: #FFF;
 	clear: both;
 }
