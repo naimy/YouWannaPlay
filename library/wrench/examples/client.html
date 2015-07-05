@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+
+html, body {
+	margin: 0px;
+	height:100%;
+	width:100%;
+	font-family: arial;
+}
+
+
+
+
+.tchatContainer {
+	width:500px;
+}
+
+
+.input {
+	width:100%;
+	outline: solid 1px #CCC;
+	border: none;
+	box-shadow: 0px 0px 4px #AAF inset ;
+}
+
+
+
+
+
+
+
+.tchatContainer {
+	width:500px;
+	border: solid 1px #00F;
+}
+
+
+
+.mainPanel {
+	position: relative;
+	height:500px;
+	width:500px;
+	border: solid 1px #F00;
+}
+
+	.userList {
+		font-size:11px;
+		border: solid 1px #CCC;
+		float: left;
+		width:150px;
+		height:100%;
+	}
+		
+		.userList .user {
+			padding:3px;
+			
+		}
+	
+	
+	
+	.messageContainer {
+		border: solid 1px #999;
+		height:100%;
+		overflow: auto;
+	}
+	
+		.entry {
+			border-bottom: solid 1px #CCC;
+			padding:3px;
+			margin-bottom:3px;
+			font-size:11px;
+		}
+		
+			.entry .timeStamp {
+				display: inline-block;
+				margin-right:6px;
+				border-right: solid 1px #CCC;
+				padding-right:6px;
+				color:#999;
+			}
+		
+		
+			.entry .userLogin {
+				display: inline-block;
+				margin-right:6px;
+				color:#A00;
+				font-weight: bold;
+			}
+
+
+</style>
+
+
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+	<div class="tchatContainer">
+		<div>
+			<div>
+				<input class="pseudo"/>
+			</div>
+		</div>
+
+
+		<div class="mainPanel">
+			<div class="userList">
+			
+			</div>
+
+			<div class="messageContainer">
+			</div>
+		</div>
+		
+		<div><input class="input"/></div>
+	</div>
+
+
+</body>
+<script>
+
+ 
+ 
+ Number.prototype.padLeft = function (n,str){
+    return Array(n-String(this).length+1).join(str||'0')+this;
+}
+ 
+ 
+ function Message(type, content) {
+	this.type=type,
+	this.content=content;
+ }
+ 
+ Message.prototype.stringify=function() {
+	return JSON.stringify({
+		type: this.type,
+		data:this.content
+	});
+ }
+ 
+ 
+ 
+ 
+ 
+ function User(id, login) {
+	this.login=login;
+	this.id=id;
+ }
+ 
+ 
+ User.prototype.render=function(node) {
+	jQuery(node).append('<div class="user" userId="'+this.id+'">'+this.login+'</div>');
+ }
+ 
+ 
+ 
+ function Client(url, login) {
+ 	this.url=url;
+	this.id=null;
+	this.socket=null;
+	this.login=login;
+ }
+ 
+  
+ 
+ Client.prototype.send=function(message) {
+	this.socket.send(message.stringify());
+ }
+ 
+ 
+ 
+ 
+ Client.prototype.handleMessage=function(message) {
+	var data=JSON.parse(message.data);
+	
+	
+	console.debug(data);
+	
+	if(data.type=='message') {
+		this.displayMessage(data);
+	}
+	else if(data.type=='connection') {
+		this.id=data.id;
+		this.send(new Message('register', {login: this.login}));
+	}
+	else if(data.type=='userList') {
+		jQuery('.userList').empty();
+		for(var i=0; i<data.data.clients.length; i++) {
+			var user=new User(
+				data.data.clients[i].id,
+				data.data.clients[i].login
+			);
+			user.render('.userList');
+		}
+	}
+  }
+  
+  
+  
+  Client.prototype.displayMessage=function(data) {
+	
+	var date=new Date(data.time*1000);
+	dateString=date.getHours()+':'+date.getMinutes().padLeft(2, '0');
+  
+	jQuery('.messageContainer').append(
+		'<div class="entry"><span class="timeStamp">'+dateString+'</span><span class="userLogin">'+data.data.client.login+' : </span>'+data.data.message+'</div>'
+	);
+	var d = jQuery('.messageContainer');
+	d.scrollTop(d.prop("scrollHeight"));
+  }
+  
+ 
+ Client.prototype.connect=function() {
+	this.socket=new WebSocket(this.url);
+	
+	var self=this;
+	
+	this.socket.onmessage=function(message) {
+		self.handleMessage(message);
+	}
+ }
+
+ 
+ jQuery(function() {
+ 	var client=new Client("ws://localhost:8000/echo", jQuery('.pseudo').val());
+	client.connect();
+	
+	
+ 	jQuery('.input').keypress(function(event) {
+		if(event.keyCode==13) {
+			if(this.value.length) {
+				client.send(new Message('message', {message: this.value}));
+				this.value='';
+			}
+		}
+	});
+ });
+ 
+
+
+</script>
+
+
+</html>
