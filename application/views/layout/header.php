@@ -2,6 +2,9 @@
 	<div class="logo">
 		<img src="/public_html/images/logo/youwannaplay.png" width="150"/>
 	</div>
+	<div class="twitch">
+		<iframe src="http://www.twitch.tv/youwannaplay/embed" frameborder="0" scrolling="no" height="200" width="320"></iframe>
+	</div>
 	<div class="login">
 	<ul>
 		<li class="first"><label for="login">Login :</label></li>

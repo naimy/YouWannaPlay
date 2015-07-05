@@ -35,6 +35,11 @@ body {
 	list-style-type: none;
 }
 
+.twitch{
+	margin-left: 157px;
+  	float: left;
+}
+
 #navigation {
 	border-radius: 5px;
 	background-color: #000;
