@@ -66,7 +66,7 @@
 						$get_logo_image = get_theme_option('logo');
 						if($get_logo_image != '') {
 							?>
-							<a href="<?php bloginfo('url'); ?>"><img src="<?php echo $get_logo_image; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logoimg" /></a>
+							<a href="<?php bloginfo('url'); ?>"><img src="<?php echo $get_logo_image; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logoimg" width="85" /></a>
 							<?php
 						} else {
 							?>
