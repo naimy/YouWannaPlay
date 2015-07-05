@@ -1,0 +1,39 @@
+/************** NAVIGATION ***********/
+body {
+	background-color: #000;
+	background-image:url('/public_html/images/background/background.jpg');
+	background-attachment:fixed;
+}
+
+.container {
+	margin-top:160px;
+	background-color: #eee;
+	padding: 5px;
+}
+
+#navigation{
+	height:50px;
+	line-height:50px;
+	width:100%;
+	background-color:#000;
+	color:#FFF;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#navigation ul{
+	margin:0;
+	padding:0;
+}
+
+#navigation ul li {
+	float: left;
+	list-style-type: none;
+	padding:0 10px;
+	border-left:1px solid #FFF;
+	border-right:1px solid #FFF;
+}
+
+.content {
+	clear: both
+}
