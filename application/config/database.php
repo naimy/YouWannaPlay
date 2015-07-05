@@ -50,8 +50,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'timisse78';
-$db['default']['database'] = 'g';
+$db['default']['password'] = 'azerty55-';
+$db['default']['database'] = 'youwannaplay';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
