@@ -75,6 +75,7 @@ body {
 }
 
 #navigation ul li a {
+	display:block;
 	color: #FFF;
 	text-decoration:none;
 }
