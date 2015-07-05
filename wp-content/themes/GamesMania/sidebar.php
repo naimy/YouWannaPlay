@@ -1,4 +1,4 @@
-<div class="span-11 last">
+<div class="span-7 last">
             
 	<div class="span-7">
 	

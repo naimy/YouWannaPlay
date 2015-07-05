@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 		<div class="span-24" id="contentwrap">
-			<div class="span-13">
+			<div class="span-17">
 				<div id="content">	
                 <?php if(is_home()) { include (TEMPLATEPATH . '/featured.php'); } ?>		
 					<?php if (have_posts()) : ?>	
