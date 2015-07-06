@@ -18,7 +18,7 @@ useBackground=yes
 customBackgroundColor=#FFF
 
 //////////////////////////// example: http://www.examplewebsite.com/exampleimage.jpg 
-customBackgroundURL=
+customBackgroundURL= http://youwannaplay.com/public_html/images/background/background.jpg
 //////////////////////////// 
 
 playMusic=yes
