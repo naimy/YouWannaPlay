@@ -4,6 +4,11 @@ input[type="text"] {
 	border-radius: 5px;
 }
 
+input[type="password"] {
+	padding: 5px;
+	border-radius: 5px;
+}
+
 /************** NAVIGATION ***********/
 body {
 	font-family: Arial;
@@ -36,6 +41,7 @@ body {
 	margin-top: 37px;
 	margin-right: 43px;
 	float: right;
+	height:164px;
 }
 
 .login ul li {

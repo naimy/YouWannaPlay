@@ -1,0 +1,10 @@
+rule=Obey The Rules
+rule=No Hacks
+rule=Be Polite
+rule=Avoid Swearing
+rule=No Impersonating an Admin
+rule=Do Not Spray Anything Pornographic
+rule=No Spamming
+rule=Listen to Admins
+rule=Don't go AFK
+rule=Enjoy!

@@ -1,0 +1,26 @@
+MAIN OPTIONS, PLEASE CHANGE ACCORDINGLY, DO NOT CHANGE THE FORMAT
+Please Note: When changing colours if you are confused watch the changing colours tutorial link found in documentation
+
+
+API=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+customFontColor=#FFF
+customColorRed=0
+customColorGreen=128
+customColorBlue=255
+customColorAlphaTransparency=0.5
+backgroundAnimate=yes
+
+//////////////////////////// defaultBackground options are: blue, black, green, orange, red, yellow
+defaultBackground=blue
+//////////////////////////// 
+
+useBackground=yes
+customBackgroundColor=#FFF
+
+//////////////////////////// example: http://www.examplewebsite.com/exampleimage.jpg 
+customBackgroundURL=
+//////////////////////////// 
+
+playMusic=yes
+useRules=yes
+useAbout=no

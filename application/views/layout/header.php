@@ -2,17 +2,19 @@
 	<div class="logo">
 		<img src="/public_html/images/logo/youwannaplay.png" width="150"/>
 	</div>
+	<?php if ($this->data['SelectedMenu'] != 'tv'){?>
 	<div class="twitch">
 		<div class="lecteur">
 			<iframe src="http://www.twitch.tv/youwannaplay/embed" frameborder="0" scrolling="no" height="147" width="263"></iframe>
 		</div>
 	</div>
+	<?php };?>
 	<div class="login">
 	<ul>
 		<li class="first"><label for="login">Login :</label></li>
 		<li class="Last"><input name="login" id="login" type="text" /></li>
 		<li class="first"><label for="pwd">Mot de passe :</label></li>
-		<li class="Last"><input name="pwd" id="pwd" type="text" /></li>
+		<li class="Last"><input name="pwd" id="pwd" type="password" /></li>
 	</ul>
 	</div>
 	<nav id="navigation" role="navigation">
