@@ -19,8 +19,8 @@ class Video extends MY_Controller {
 		
 		$response = $youtube->search->listSearch(
 			'id,snippet', array(  
-      			'q' => 'YWPlay',  
-      			'maxResults' => 10,  
+      			'channelId' => 'UCOyulyYwysrCZ_wL06d1pzw',  
+      			'maxResults' => 50,  
    			)
 		);  
 		
