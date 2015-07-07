@@ -11,8 +11,9 @@ class Video extends MY_Controller {
 		
 		require_once ('./public_html/api/vendor/autoload.php');
 		
+		$key = 'AIzaSyCEdA2n4j2ZlfqkrEA86I3Abp1p3jU0wbI';
 		$client = new Google_Client();
-		$client->setDeveloperKey('AIzaSyCEdA2n4j2ZlfqkrEA86I3Abp1p3jU0wbI');
+		$client->setDeveloperKey($key);
 		
 		$youtube = new Google_Service_YouTube($client);
 		
