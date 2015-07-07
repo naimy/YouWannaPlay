@@ -9,7 +9,7 @@ class Video extends MY_Controller {
 		$this->data ['title'] = 'Vidéos';
 		$this->content = 'video'; // passing middle to function. change this for different views.
 		
-		require ('/var/www/public_html/api/vendor/autoload.php');
+		require ('./public_html/api/vendor/autoload.php');
 		
 		$client = new Google_Client();
 		$client->setDeveloperKey('AIzaSyCEdA2n4j2ZlfqkrEA86I3Abp1p3jU0wbI');
