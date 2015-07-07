@@ -19,12 +19,12 @@ class Video extends MY_Controller {
 		
 		var_dump($youtube->channels->list());
 		
-		$response = $youtube->Channels->list(
-				'part',
-				array (
-					'forUsername' => "youwannaplay"
-				)
-		);
+		$response = $youtube->search->listSearch(
+			'id,snippet', array(  
+      			'q' => 'YWPlay',  
+      			'maxResults' => 10,  
+   			)
+		);  
 		
 		echo '<pre>';
 		var_dump($response);
