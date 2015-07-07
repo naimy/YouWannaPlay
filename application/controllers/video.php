@@ -17,10 +17,10 @@ class Video extends MY_Controller {
 		
 		$youtube = new Google_Service_YouTube($client);
 		
-		var_dump($youtube->channels);
+		var_dump($youtube->channels->list());
 		
 		$response = $youtube->Channels->list(
-				'id,snippet',
+				'part',
 				array (
 					'forUsername' => "youwannaplay"
 				)
