@@ -17,7 +17,7 @@ class Video extends MY_Controller {
 		
 		$youtube = new Google_Service_YouTube($client);
 		
-		$response = $youtube->channels->list(
+		$response = $youtube->Channels->list(
 				'id,snippet',
 				array (
 					'forUsername' => "youwannaplay"
