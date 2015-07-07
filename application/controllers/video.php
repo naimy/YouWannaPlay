@@ -16,7 +16,7 @@ class Video extends MY_Controller {
 		
 		$youtube = new Google_Service_Youtube($client);
 		
-		$response = $youtube->search->listSearch('id,snippet',['q' => 'racoon'], 'order'=> 'relevance','maxResults' => 10, 'type'=>'video');
+		$response = $youtube->search->listSearch('id,snippet',['q' => 'racoon', 'order' => 'relevance','maxResults' => 10, 'type' => 'video']);
 		
 		echo '<pre>';
 		var_dump($response);
