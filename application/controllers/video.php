@@ -18,12 +18,12 @@ class Video extends MY_Controller {
 		
 		$response = $youtube->search->listSearch(
 				'id,snippet',
-				[
+				array(
 					'q' => 'racoon',
 			 		'order' => 'relevance',
 					'maxResults' => 10,
 					'type' => 'video'
-				]
+				)
 		);
 		
 		echo '<pre>';
