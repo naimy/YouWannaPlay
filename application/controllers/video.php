@@ -17,7 +17,7 @@ class Video extends MY_Controller {
 		
 		$youtube = new Google_Service_YouTube($client);
 		
-		var_dump($youtube->Channels);
+		var_dump($youtube->channels);
 		
 		$response = $youtube->Channels->list(
 				'id,snippet',
