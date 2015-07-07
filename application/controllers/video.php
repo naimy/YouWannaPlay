@@ -9,7 +9,7 @@ class Video extends MY_Controller {
 		$this->data ['title'] = 'Vidéos';
 		$this->content = 'video'; // passing middle to function. change this for different views.
 		
-		var_dump(BASE_URL);
+		var_dump($_SERVER["document_root"]);
 		
 		require ($_SERVER['HTTP_HOST'].'/public_html/api/vendor/autoload.php');
 		
