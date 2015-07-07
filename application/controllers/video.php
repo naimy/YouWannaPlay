@@ -17,13 +17,10 @@ class Video extends MY_Controller {
 		
 		$youtube = new Google_Service_YouTube($client);
 		
-		$response = $youtube->search->listSearch(
+		$response = $youtube->channels->list(
 				'id,snippet',
-				array(
-					'q' => 'racoon',
-			 		'order' => 'relevance',
-					'maxResults' => 10,
-					'type' => 'video'
+				array (
+					'forUsername' => "youwannaplay"
 				)
 		);
 		
@@ -35,5 +32,6 @@ class Video extends MY_Controller {
 				
 		$this->layout ();
 	}
+	
 	
 }
