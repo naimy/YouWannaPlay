@@ -11,7 +11,7 @@ class Video extends MY_Controller {
 		
 		require_once ('./public_html/api/vendor/autoload.php');
 		
-		$key = 'AIzaSyCEdA2n4j2ZlfqkrEA86I3Abp1p3jU0wbI';
+		$key = 'AIzaSyA65jBgblQcRlGvID4MuB8RALgjbANBGA0';
 		$client = new Google_Client();
 		$client->setDeveloperKey($key);
 		
