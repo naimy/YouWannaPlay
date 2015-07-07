@@ -9,7 +9,7 @@ class Video extends MY_Controller {
 		$this->data ['title'] = 'Vidéos';
 		$this->content = 'video'; // passing middle to function. change this for different views.
 		
-		var_dump(BASEPATH);
+		var_dump(phpinfo());
 		
 		require (BASEPATH.'/public_html/api/vendor/autoload.php');
 		
