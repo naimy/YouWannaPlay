@@ -18,7 +18,7 @@ class Video extends MY_Controller {
 		$youtube = new Google_Service_YouTube($client);
 		
 		$response = $youtube->search->listSearch(
-			'id,snippet', array(  
+			'snippet', array(  
       			'channelId' => 'UCOyulyYwysrCZ_wL06d1pzw',  
       			'maxResults' => 50,  
    			)
