@@ -21,8 +21,8 @@
 		<ul>
 			<li class="<?php if ($this->data['SelectedMenu'] == 'home'){?>active<?php };?> first"><a href="/">Home</a></li>
 			<li class="<?php if ($this->data['SelectedMenu'] == 'tv'){?>active<?php };?>"><a href="/index.php/tv">Chaine TV</a></li>
-			<li class=""><a href="/">Serveur de jeux</a></li>
-			<li class=""><a href="/">Vidéos</a></li>
+			<li class="<?php if ($this->data['SelectedMenu'] == 'server'){?>active<?php };?>"><a href="/index.php/video">Serveur de jeux</a></li>
+			<li class="<?php if ($this->data['SelectedMenu'] == 'video'){?>active<?php };?>"><a href="/">Vidéos</a></li>
 			<li class=""><a href="/">Boutique</a></li>
 		</ul>
 	</nav>
