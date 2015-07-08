@@ -346,7 +346,7 @@ if (strcmp($useAbout, 'yes') === 0)
 
 <?php if (strcmp($playMusic, 'yes') === 0)
 {
-	echo '<embed VOLUME=40 loop="true" src="music/music.mp3" hidden="true" type="audio/mpeg"></embed>';
+	echo '<embed volume="0" loop="true" src="music/music.mp3" hidden="true" type="audio/mpeg"></embed>';
 }
 ?>
 
