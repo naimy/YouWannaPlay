@@ -1,5 +1,6 @@
-1=Pas de free-kill
-2=Jouez de facon RP
-3=Pas d'insultes peu importe les raisons
-4=Evitez de deranger les admins pour des histoires de gamins !
-4=Enjoy !
+rule=Pas de free-kill
+rule=Jouez de facon RP
+rule=Pas d'insultes peu importe les raisons
+rule=Evitez de deranger les admins pour des histoires de gamins !
+rule=Pas de cheat !(Ban sur le champs)
+rule=Enjoy !
