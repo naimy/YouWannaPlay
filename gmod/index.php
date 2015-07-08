@@ -346,8 +346,8 @@ if (strcmp($useAbout, 'yes') === 0)
 
 <?php if (strcmp($playMusic, 'yes') === 0)
 {
-	echo '<audio autoplay id="musique" src="music/music.mp3" controls="controls">Your browser does not support the audio element.</audio>';
-	echo '<script type="text/javascript">var monElementAudio = document.getElementById("musique");monElementAudio.volume = 0.5;</script>';
+	echo '<audio style="display:none;" autoplay id="musique" src="music/music.mp3" controls="controls">Your browser does not support the audio element.</audio>';
+	echo '<script type="text/javascript">var monElementAudio = document.getElementById("musique");monElementAudio.volume = 0.3;</script>';
     //echo '<embed volume="0" loop="true" src="music/music.mp3" hidden="true" type="audio/mpeg"></embed>';
 }
 ?>
