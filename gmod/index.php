@@ -346,7 +346,8 @@ if (strcmp($useAbout, 'yes') === 0)
 
 <?php if (strcmp($playMusic, 'yes') === 0)
 {
-	echo '<embed volume="0" loop="true" src="music/music.mp3" hidden="true" type="audio/mpeg"></embed>';
+	echo '<audio src="music/music.mp3" controls="controls">Your browser does not support the audio element.</audio>';
+	//echo '<embed volume="0" loop="true" src="music/music.mp3" hidden="true" type="audio/mpeg"></embed>';
 }
 ?>
 
