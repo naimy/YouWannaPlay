@@ -1,4 +1,5 @@
-1 - Pas de free-kill
-2 - Jouez de facon RP
-3 - Pas d'insultes peu importe la raison
-4 - Enjoy !
+1=Pas de free-kill
+2=Jouez de facon RP
+3=Pas d'insultes peu importe les raisons
+4=Evitez de deranger les admins pour des histoires de gamins !
+4=Enjoy !
