@@ -1,6 +1,6 @@
 rule=Pas de free-kill
 rule=Jouez de facon RP
 rule=Pas d'insultes peu importe les raisons
-rule=Evitez de deranger les admins pour des histoires de gamins !
 rule=Pas de cheat !(Ban sur le champs)
+rule=Ne pas Flood le micro de la police
 rule=Enjoy !
